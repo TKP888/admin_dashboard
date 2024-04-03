@@ -1,26 +1,83 @@
-#container{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#sidebar{
-    color: white;
+
+#container {
+    border: solid black 1px;
     display: grid;
-    
-    background-color: #0369a1 ;
+    grid-template-columns: 1fr 3.5fr 1.5fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    height: 100vh;
+    /* grid-template-rows: ; */
+}
+
+#sidebar {
+    border: solid pink 1px;
+    background-color: rgb(26,146,211);
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
 }
 
 #header {
-    border: 1px solid blue;
+    display: grid;
+    border: solid blue 1px;
+    background-color: bisque;
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
 }
 
 
 #main {
-border: 1px solid black;
+    border: solid green 1px;
+    background-color: rgb(226,232,240);
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
 }
 
+#announcement {
+    border: solid yellow 1px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: rgb(226,232,240);
+}
 
-#other {
-    border: 1px solid green;
+#trending {
+    border: solid yellow 1px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-color: rgb(226,232,240);
+}
+
+.sidecard{
+background-color: white;
+width: auto;
+border-radius: 15px;
+
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+ul{
+    margin: 20px;
+    margin-top: 50px;
+}
+
+input{
+    border-radius: 25px;
+    width: 500px;
+}
+
+button{
+    background-color: rgb(26,146,211);
+    width: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
