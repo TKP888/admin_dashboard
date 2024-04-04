@@ -1,10 +1,11 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
 }
 
 
 #container {
-    border: solid black 1px;
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
     grid-template-rows: 1fr 3fr 3fr;
@@ -13,7 +14,7 @@ body{
 }
 
 #sidebar {
-    border: solid pink 1px;
+   
     background-color: rgb(26,146,211);
     grid-column: 1 / 2;
     grid-row: 1 / 4;
@@ -21,7 +22,7 @@ body{
 
 #header {
     display: grid;
-    border: solid blue 1px;
+
     background-color: bisque;
     grid-column: 2 / 4;
     grid-row: 1 / 1;
@@ -29,30 +30,37 @@ body{
 
 
 #main {
-    border: solid green 1px;
+    
     background-color: rgb(226,232,240);
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    resize: both;
+    overflow: auto;
+    gap: 20px;
 }
 
 #announcement {
-    border: solid yellow 1px;
+
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-color: rgb(226,232,240);
 }
 
 #trending {
-    border: solid yellow 1px;
+
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     background-color: rgb(226,232,240);
 }
-
+.card,
 .sidecard{
 background-color: white;
 width: auto;
 border-radius: 15px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
 }
 
