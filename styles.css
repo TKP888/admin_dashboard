@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -74,17 +76,34 @@ hr {
     width: auto;
 }
 
-li {
+.sidetext0 {
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidetext1 {
     list-style-type: none;
     color: white;
     font-weight: bolder;
     margin-top: 20px;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+
 }
 
 ul {
-    margin: 20px;
+    margin-bottom: 20px;
     margin-top: 50px;
+    margin-right: 50px;
+}
+
+.sml-side{
+    margin-left: 30px;
 }
 
 input {
@@ -95,6 +114,7 @@ input {
     font-size: 16px;
     background-color: lightgrey;
     border: none;
+    padding-left: 15px;
 }
 
 button {
@@ -133,3 +153,35 @@ h3{
 }
 
 h2{margin-right: 75px;}
+
+.accounticon {
+    margin-right: 10px;
+width: 80px;
+height: 80px;
+align-items: center;
+
+}
+
+.icon-white{
+    width: 20px;
+height: 20px;
+align-items: center;
+    padding-right: 10px;
+    filter: invert(95%) sepia(95%) saturate(21%) hue-rotate(344deg) brightness(105%) contrast(108%);
+}
+
+
+.icon-white-lrg{
+    width: 50px;
+height: 50px;
+align-items: center;
+    padding-right: 10px;
+    filter: invert(95%) sepia(95%) saturate(21%) hue-rotate(344deg) brightness(105%) contrast(108%);
+}
+
+.txtstack{
+display: flex;
+align-items: start;
+justify-content: space-around;
+}
+
