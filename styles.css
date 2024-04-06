@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -36,7 +34,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /* resize: both; */
     overflow: auto;
     gap: 20px;
 }
@@ -56,7 +53,8 @@ body {
 .card,
 .sidecard {
     padding: 25px;
-    margin: 15px;
+    margin: 11px;
+    margin-top: 0;
     background-color: white;
     width: auto;
     border-radius: 15px;
@@ -76,7 +74,8 @@ hr {
     width: auto;
 }
 
-.sidetext0 {
+.sidetext0,
+.sidetext1 {
     list-style-type: none;
     color: white;
     font-weight: bolder;
@@ -86,14 +85,7 @@ hr {
 }
 
 .sidetext1 {
-    list-style-type: none;
-    color: white;
-    font-weight: bolder;
     margin-top: 20px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-
 }
 
 ul {
@@ -102,7 +94,7 @@ ul {
     margin-right: 50px;
 }
 
-.sml-side{
+.sml-side {
     margin-left: 30px;
 }
 
@@ -127,61 +119,79 @@ button {
     font-weight: 600;
     color: white;
     margin: 25px 75px 25px 0px;
-    
-    
-}
-#headtop,
-#interactive{
-    display: flex;
- justify-content: space-between;
 }
 
-.name{
-    margin-left: 20px ;
+#headtop,
+#interactive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    margin-left: 20px;
     display: flex;
     align-self: center;
     justify-content: center;
 }
 
-h1{
+h1 {
     text-align: center;
     color: white;
 }
 
-h3{
+h3 {
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 
-h2{margin-right: 75px;}
+h2 {
+    margin-right: 75px;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.head1 {
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.head2 {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
 
 .accounticon {
     margin-right: 10px;
-width: 80px;
-height: 80px;
-align-items: center;
-
+    width: 80px;
+    height: 80px;
+    align-items: center;
 }
 
-.icon-white{
+.icon-white,
+.icon-white-lrg {
     width: 20px;
-height: 20px;
-align-items: center;
+    height: 20px;
+    align-items: center;
     padding-right: 10px;
     filter: invert(95%) sepia(95%) saturate(21%) hue-rotate(344deg) brightness(105%) contrast(108%);
 }
 
-
-.icon-white-lrg{
+.icon-white-lrg {
     width: 50px;
-height: 50px;
-align-items: center;
-    padding-right: 10px;
-    filter: invert(95%) sepia(95%) saturate(21%) hue-rotate(344deg) brightness(105%) contrast(108%);
+    height: 50px;
 }
 
-.txtstack{
-display: flex;
-align-items: start;
-justify-content: space-around;
+.txtstack {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
 }
 
+.social{
+    display: flex;
+}
