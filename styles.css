@@ -21,7 +21,7 @@ body {
     display: grid;
     background-color: white;
     grid-column: 2 / 4;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
 #main {
@@ -34,7 +34,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    resize: both;
+    /* resize: both; */
     overflow: auto;
     gap: 20px;
 }
@@ -88,13 +88,13 @@ ul {
 }
 
 input {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px;
     border-radius: 25px;
     width: 500px;
     height: 40px;
     font-size: 16px;
     background-color: lightgrey;
+    border: none;
 }
 
 button {
@@ -106,4 +106,30 @@ button {
     font-size: 16px;
     font-weight: 600;
     color: white;
+    margin: 25px 75px 25px 0px;
+    
+    
 }
+#headtop,
+#interactive{
+    display: flex;
+ justify-content: space-between;
+}
+
+.name{
+    margin-left: 20px ;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+h2{margin-right: 75px;}
